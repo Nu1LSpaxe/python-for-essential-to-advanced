@@ -1,0 +1,5 @@
+Hello, Python File I/O!
+This is a sample text file.
+Welcome to the world of file handling in Python.
+We will learn how to read and write files.
+Let's get started!

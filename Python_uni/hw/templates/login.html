@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Login Page</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    {% if error %}
+      <p>{{ error }}</p>
+    {% endif %}
+
+    <form method="POST" action="/login">
+      <p><input type="text" name="username" placeholder="Username"></p>
+      <p><input type="text" name="email" placeholder="Email"></p>
+      <p><input type="password" name="password" placeholder="Password"></p>
+      <p><input type="submit" value="Login"></p>
+    </form>
+  </body>
+</html>
