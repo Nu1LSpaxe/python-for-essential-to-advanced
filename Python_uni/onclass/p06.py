@@ -15,7 +15,7 @@ import requests
 # if response.status_code == 200:
 #     content = response.text
 #     soup = BeautifulSoup(content, 'html.parser')
-    
+
 #     img =  soup.find_all('img')
 #     print(img)
 #     for i in img:
@@ -31,10 +31,9 @@ for page in range(1, 51):
     if response.status_code == 200:
         content = response.text
         soup = BeautifulSoup(content, 'html.parser')
-        
+
         img =  soup.find_all('img')
         print(img)
         for page in img:
-            alt = page.get('alt')
-            if alt: 
+            if alt := page.get('alt'):
                 nameList.append(alt)

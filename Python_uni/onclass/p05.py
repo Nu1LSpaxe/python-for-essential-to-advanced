@@ -5,11 +5,7 @@ response = requests.get('https://data.epa.gov.tw/api/v2/aqx_p_02?api_key=e8dd42e
 data = response.json()['records']
 
 for i in range(len(data)):
-    if not data[i]['pm25']:
-        data[i]['pm25'] = 0
-    else:
-        data[i]['pm25'] = int(data[i]['pm25'])
-
+    data[i]['pm25'] = 0 if not data[i]['pm25'] else int(data[i]['pm25'])
 data = sorted(data, key=lambda d: d['pm25'], reverse=True)
 
 [print(i) for i in data[:5]]
