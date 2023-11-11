@@ -1,4 +1,4 @@
-package main
+package mini
 
 import (
 	"fmt"
@@ -57,7 +57,7 @@ func setTotalAndAverage(myScore *score) {
 	myScore.average = float64(myScore.total) / float64(3)
 }
 
-func main() {
+func ScoreManageSystem() {
 	myScore := score{
 		chinese: 0,
 		english: 0,

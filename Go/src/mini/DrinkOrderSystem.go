@@ -1,4 +1,6 @@
-package main
+//go:build exclude
+
+package mini
 
 import (
 	"fmt"
@@ -8,7 +10,7 @@ import (
 var menu = make(map[string]int)
 var keys = make(map[int]string)
 
-func main() {
+func DrinkOrderSystem() {
 
 	for {
 		var userInput int

@@ -1,11 +1,11 @@
-package main
+package mini
 
 import (
 	"fmt"
 	"sort"
 )
 
-func main() {
+func ScoreRecord() {
 
 	var member int
 	var name []string

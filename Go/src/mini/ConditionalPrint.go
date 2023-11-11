@@ -1,19 +1,9 @@
-package main
+package mini
 
 import (
 	"fmt"
 	"strings"
 )
-
-// 孩童票function
-func children(fee int) int {
-	return fee - 40
-}
-
-// 學生票function
-func students(fee int) float64 {
-	return float64(fee) * 0.8
-}
 
 // 票數 function
 func sum_ticket() int {
@@ -25,7 +15,7 @@ func sum_ticket() int {
 	return ticket
 }
 
-func main() {
+func ConditionalPrint() {
 
 	// 命名變數: 站票 = stand_up, 坐票 = sit_down, 編號 = number, 票種 = typed
 	var stand_up, sit_down, number, typed int

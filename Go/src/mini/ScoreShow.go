@@ -1,8 +1,8 @@
-package main
+package mini
 
 import "fmt"
 
-func main() {
+func ScoreShow() {
 
 	var name, grade string
 	var math, english int

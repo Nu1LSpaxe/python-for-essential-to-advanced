@@ -1,4 +1,4 @@
-package main
+package mini
 
 import (
 	"fmt"
@@ -15,7 +15,7 @@ func students(fee int) float64 {
 	return float64(fee) * 0.8
 }
 
-func main() {
+func FormatOutput() {
 
 	// 命名變數: 站票 = stand_up, 坐票 = sit_down
 	var stand_up, sit_down int

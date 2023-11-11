@@ -40,7 +40,7 @@ func ReadFile(filename string) []Competitor {
 func (c *Competitor) Running() {
 
 	defer wg.Done()
-	
+
 	if c.Runned == distance {
 		return
 	}
@@ -104,7 +104,7 @@ func main() {
 				/* !!!!! 為什麼不能用 _, competitor (struct 會無法儲存計算) !!!!! */
 				var c Competition = &competitors[index]
 				// go competitors[index].Running()
-                wg.Add(1)
+				wg.Add(1)
 				go c.Running()
 				// fmt.Println(competitor)
 			}
