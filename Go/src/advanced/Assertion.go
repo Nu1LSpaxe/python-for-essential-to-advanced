@@ -47,7 +47,7 @@ func Assertion() {
 
 	/* Test: Int32AndFloat32InAssert */
 	numsInt := []int32{1, 2, 3, 4, 5}
-	numsFloat := []float32{1.0, 2.2, 3.5, 4.8, 5.9}
+	numsFloat := []float32{0.3, 1.8, 3.3, 4.6, 5.0}
 
 	// 轉換至空介面 interface{}
 	interfaceInt := make([]interface{}, len(numsInt))

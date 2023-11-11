@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	advanced.Assertion()
+	advanced.GenericChannel()
 }
