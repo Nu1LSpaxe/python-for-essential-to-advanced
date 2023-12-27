@@ -2,7 +2,7 @@ import openai
 import json
 
 # 設置 OpenAI API Key
-openai.api_key = "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"
+openai.api_key = "YOUR-OPENAI-API-KEY"
 
 # 輸入文本
 input_text = "今天天氣很好，請用中文回答。請做一首跟天氣有關的詩"
